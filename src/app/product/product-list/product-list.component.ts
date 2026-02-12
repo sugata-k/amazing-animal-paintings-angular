@@ -17,10 +17,13 @@ export class ProductListComponent implements OnInit {
   ) { }
 
   products: Product[] = [];
+  filteredProducts: Product[] = [];
+  sortOrder = "";
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(products => {
       this.products = products;
+      this.filteredProducts = products;
     });
   }
 
@@ -32,5 +35,26 @@ export class ProductListComponent implements OnInit {
         verticalPosition: 'top'
       });
     });
+  }
+
+  applyFilter(event: Event) {
+    let searchText = (event.target as HTMLInputElement).value;
+    searchText = searchText.trim().toLowerCase();
+
+    this.filteredProducts = this.products.filter(product =>
+      product.name.toLowerCase().includes(searchText)
+    );
+
+    this.sortProducts(this.sortOrder);
+  }
+
+  sortProducts(sortBy: string) {
+    if (sortBy === 'priceLowHigh') {
+      this.filteredProducts.sort((a, b) => a.price - b.price);
+    } else if (sortBy === 'priceHighLow') {
+      this.filteredProducts.sort((a, b) => b.price - a.price);
+    } else if (sortBy === 'name') {
+      this.filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+    }
   }
 }

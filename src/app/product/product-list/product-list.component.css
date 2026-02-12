@@ -9,3 +9,6 @@ mat-card:hover {
     cursor: pointer;
 }
 
+.sort-dropdown {
+    margin-left: 20px;
+}
