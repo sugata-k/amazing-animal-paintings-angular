@@ -2,26 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
-## Development server
+This is a sample e-commerce website, created from mock backend APIs using Mockoon. Mockoon environment file is added in the repo. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+It is using the following external packages : 
+- angular material for styling and angular components
+- angular flex-grid for responsive screen
 
-## Code scaffolding
+## Pages
+<img width="1848" height="986" alt="image" src="https://github.com/user-attachments/assets/ed1a04ce-8c9d-497a-a954-2e0fd991d376" />
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img width="1057" height="486" alt="image" src="https://github.com/user-attachments/assets/b2b59533-7618-414a-9f8a-e1b8db057565" />
 
-## Build
+<img width="1863" height="733" alt="image" src="https://github.com/user-attachments/assets/6839f445-ea46-4eb1-bcd2-737305c9e187" />
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img width="855" height="726" alt="image" src="https://github.com/user-attachments/assets/5a61d67d-1337-4431-b23b-40f66388cfb2" />
